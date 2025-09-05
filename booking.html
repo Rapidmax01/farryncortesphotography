@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Session - Farryn Cortes Photography</title>
+    <meta name="description" content="Book your photography session with Farryn Cortes. Choose from portrait, event, commercial, or lifestyle photography services.">
+    <link rel="stylesheet" href="/src/styles/main.css">
+    <link rel="stylesheet" href="/src/styles/booking.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="/">Farryn Cortes Photography</a>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/portfolio.html" class="nav-link">Portfolio</a>
+                <a href="/about.html" class="nav-link">About</a>
+                <a href="/booking.html" class="nav-link active">Booking</a>
+                <a href="/contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="booking-hero" style="background-image: url('/photos/1W9A5397.JPG')">
+        <div class="hero-overlay">
+            <div class="container">
+                <h1 class="page-title">Book Your Session</h1>
+                <p class="page-subtitle">Let's create legendary memories together</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="booking-content">
+        <div class="container">
+            <div class="booking-intro">
+                <h2>Ready to Book Your Photography Session?</h2>
+                <p>Select your desired service below and fill out the booking form. I'll get back to you within 24 hours to confirm availability and discuss your vision.</p>
+            </div>
+
+            <div class="services-overview">
+                <div class="service-option">
+                    <div class="service-icon">📸</div>
+                    <h3>Portrait Photography</h3>
+                    <p>Professional portraits for individuals, families, and professionals</p>
+                    <ul>
+                        <li>1-2 hour session</li>
+                        <li>Multiple locations available</li>
+                        <li>Outfit changes included</li>
+                        <li>30+ edited images</li>
+                    </ul>
+                    <p class="price">Starting at $350</p>
+                </div>
+
+                <div class="service-option">
+                    <div class="service-icon">🎉</div>
+                    <h3>Event Photography</h3>
+                    <p>Coverage for corporate events, parties, and special occasions</p>
+                    <ul>
+                        <li>Flexible hourly coverage</li>
+                        <li>Quick turnaround time</li>
+                        <li>All event highlights captured</li>
+                        <li>Online gallery delivery</li>
+                    </ul>
+                    <p class="price">Starting at $200/hour</p>
+                </div>
+
+                <div class="service-option">
+                    <div class="service-icon">💼</div>
+                    <h3>Commercial Photography</h3>
+                    <p>Professional imagery for businesses and brands</p>
+                    <ul>
+                        <li>Product photography</li>
+                        <li>Corporate headshots</li>
+                        <li>Marketing materials</li>
+                        <li>Commercial license included</li>
+                    </ul>
+                    <p class="price">Custom pricing</p>
+                </div>
+
+                <div class="service-option">
+                    <div class="service-icon">🌟</div>
+                    <h3>Lifestyle Photography</h3>
+                    <p>Natural, candid photography in everyday settings</p>
+                    <ul>
+                        <li>In-home or outdoor sessions</li>
+                        <li>Storytelling approach</li>
+                        <li>Authentic moments</li>
+                        <li>40+ edited images</li>
+                    </ul>
+                    <p class="price">Starting at $400</p>
+                </div>
+            </div>
+
+            <div class="booking-form-section">
+                <h2>Booking Form</h2>
+                <form class="booking-form" id="bookingForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="serviceType">Service Type *</label>
+                        <select id="serviceType" name="serviceType" required>
+                            <option value="">Select a service</option>
+                            <option value="portrait">Portrait Photography</option>
+                            <option value="event">Event Photography</option>
+                            <option value="commercial">Commercial Photography</option>
+                            <option value="lifestyle">Lifestyle Photography</option>
+                        </select>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="preferredDate">Preferred Date *</label>
+                            <input type="date" id="preferredDate" name="preferredDate" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="alternateDate">Alternate Date</label>
+                            <input type="date" id="alternateDate" name="alternateDate">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sessionTime">Preferred Time *</label>
+                        <select id="sessionTime" name="sessionTime" required>
+                            <option value="">Select preferred time</option>
+                            <option value="morning">Morning (8am - 12pm)</option>
+                            <option value="afternoon">Afternoon (12pm - 5pm)</option>
+                            <option value="evening">Evening (5pm - sunset)</option>
+                            <option value="flexible">I'm flexible</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="location">Location/Venue</label>
+                        <input type="text" id="location" name="location" placeholder="Where would you like the session?">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="participants">Number of Participants</label>
+                        <input type="number" id="participants" name="participants" min="1" placeholder="How many people will be photographed?">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="details">Tell me about your vision *</label>
+                        <textarea id="details" name="details" rows="5" required placeholder="Describe your ideas, style preferences, or any special requirements..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="referral">How did you hear about me?</label>
+                        <select id="referral" name="referral">
+                            <option value="">Please select</option>
+                            <option value="social">Social Media</option>
+                            <option value="google">Google Search</option>
+                            <option value="friend">Friend/Family</option>
+                            <option value="previous">Previous Client</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <label>
+                            <input type="checkbox" id="terms" name="terms" required>
+                            I agree to the <a href="#" class="terms-link">terms and conditions</a> *
+                        </label>
+                    </div>
+
+                    <button type="submit" class="submit-button">Submit Booking Request</button>
+                </form>
+
+                <div class="form-message" id="formMessage"></div>
+            </div>
+
+            <div class="booking-info">
+                <h3>What Happens Next?</h3>
+                <div class="process-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h4>Confirmation</h4>
+                        <p>I'll review your request and confirm availability within 24 hours.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h4>Consultation</h4>
+                        <p>We'll have a brief call to discuss your vision and finalize details.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h4>Contract & Deposit</h4>
+                        <p>I'll send a contract and invoice for a 50% deposit to secure your date.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <h4>Your Session</h4>
+                        <p>On the day, we'll create amazing images in a relaxed, fun atmosphere!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Farryn Cortes Photography</h3>
+                    <p>Professional photography services capturing life's precious moments.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="/portfolio.html">Portfolio</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="/booking.html">Booking</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Get In Touch</h3>
+                    <p>Email: info@farryncortesphotography.com</p>
+                    <p>Phone: (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Farryn Cortes Photography. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="/src/scripts/main.js"></script>
+    <script type="module" src="/src/scripts/booking.js"></script>
+</body>
+</html>

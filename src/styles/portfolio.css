@@ -1,0 +1,140 @@
+.portfolio-hero {
+    background-color: var(--light-bg);
+    padding: 4rem 0 3rem;
+    text-align: center;
+}
+
+.page-title {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.page-subtitle {
+    font-size: 1.2rem;
+    color: var(--gray);
+}
+
+/* Portfolio Filters */
+.portfolio-filters {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    background-color: transparent;
+    border: 2px solid var(--gray-light);
+    color: var(--text-color);
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.filter-btn:hover {
+    border-color: var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.filter-btn.active {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    border-color: var(--secondary-color);
+}
+
+/* Gallery Grid */
+.portfolio-gallery {
+    padding: 2rem 0 4rem;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+}
+
+.gallery-image-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 350px;
+}
+
+.gallery-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.gallery-item:hover .gallery-image-wrapper img {
+    transform: scale(1.1);
+}
+
+.gallery-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    color: white;
+    padding: 2rem 1.5rem 1.5rem;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+}
+
+.gallery-item:hover .gallery-overlay {
+    transform: translateY(0);
+}
+
+.gallery-overlay h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.gallery-overlay p {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+/* Hide/show gallery items */
+.gallery-item.hide {
+    display: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .filter-buttons {
+        padding: 0 1rem;
+    }
+    
+    .filter-btn {
+        padding: 0.4rem 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 1rem;
+    }
+}
